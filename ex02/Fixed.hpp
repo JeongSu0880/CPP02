@@ -34,8 +34,8 @@ public:
 
 	Fixed &operator++();
 	Fixed &operator--();
-	Fixed operator++(int);
-	Fixed operator--(int);
+	const Fixed operator++(int);
+	const Fixed operator--(int);
 
 	Fixed operator+(const Fixed &fixedNum);
 	Fixed operator-(const Fixed &fixedNum);

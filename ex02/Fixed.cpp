@@ -87,12 +87,12 @@ Fixed &Fixed::operator--() {
 	return (*this);
 }
 
-Fixed Fixed::operator++(int) {
+const Fixed Fixed::operator++(int) {
 	Fixed tmp = *this;
 	(this->value)++;
 	return (tmp);
 }
-Fixed Fixed::operator--(int) {
+const Fixed Fixed::operator--(int) {
 	Fixed tmp = *this;
 	(this->value)--;
 	return (tmp);
